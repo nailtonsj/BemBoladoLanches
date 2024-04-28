@@ -5,7 +5,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem Bolado Lanche</title>
+  <!-- box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <!-- swiper -->
+  <link rel="stylesheet" href="./swiper-bundle.min.css">
+  <!-- mycss -->
   <link rel="stylesheet" href="style.css">
 </head>
 
@@ -22,6 +26,7 @@
       <a href="#quemsomos">Quem Somos</a>
       <a href="#servicos">Serviços</a>
       <a href="#cardapio">Cardápio</a>
+      <a href="#depoimento">Depoimentos</a>
       <a href="#contato">Contato</a>
       <span class="active-nav"></span>
       <span class="animate" style="--i:2;"></span>
@@ -31,10 +36,10 @@
     <div class="inicio-texto">
       <h1 class="title">Fome?Bem bolado <br>lanches resolve.</h1>
       <p>Desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães. E não para por aí! Além dos hambúrgueres, oferecemos uma variedade de lanches deliciosos, perfeitos para saciar sua fome a qualquer hora do dia.</p>
-      <a href="">FAZER PEDIDO <span><img src="./logo-whatsapp.svg" alt=""></span></a>
+      <a href="">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
     </div>
     <div>
-      <img src="./inicio.png" alt="">
+      <img src="./img/inicio.png" alt="">
     </div>
   </section>
   <section id="quemsomos">
@@ -51,25 +56,177 @@
     <h1>Serviços</h1>
     <div class="card">
       <div class="card-item">
-        <img src="./hotdog.png" alt="">
+        <img src="./img/hotdog.png" alt="">
         <h2>HotDog</h2>
         <p>Temos hotdogs ao jeitinho brasileiro, com vários completos e bem recheado.</p>
       </div>
       <div class="card-item">
-        <img src="./hamburguer.png" alt="">
+        <img src="./img/hamburguer.png" alt="">
         <h2>hamburguer</h2>
         <p>O nosso hamburguer sucolento e grande vem para matar a sua fome.</p>
       </div>
       <div class="card-item">
-        <img src="./bebida.png" alt="">
+        <img src="./img/bebida.png" alt="">
         <h2>Bebidas</h2>
         <p>Temos refrigerantes e sucos bem gelado para fazer o complemento no seu lanche.</p>
       </div>
     </div>
     <a href="" class="btn-cardapio">Ver Cardapio</a>
   </section>
+  <section id="cardapio">
+    <h1>Cardápio</h1>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <h2>Hot-Dog</h2>
+          <ul>
+            <li>
+              <h3>BOLADOG</h3>
+              <p>Salsicha, Purê, Milho, Ervilha, Batata Palha</p>
+            </li>
+            <li>
+              <h3>BEM BOLADO DOG+</h3>
+              <p>Salsicha, Purê, Milho, Ervilha,Tomate,Queijo,Batata Palha, Bacon, Catupiry</p>
+            </li>
+            <li>
+              <h3>BEM BOLADO DOG TUDO</h3>
+              <p>Salsicha, Purê, Milho, Ervilha, Queijo, Batata Palha, Bacon, Catupiry, Cheddar, Presunto, Tomate
+              </p>
+            </li>
+            <li>
+              <h3>BOLADEZA</h3>
+              <p>Calabresa, Salsicha, Purê Milho, Ervilha, Bacon, Catupiry, CHeddar, Queijo, Batata Palha</p>
+            </li>
+            <li>
+              <h3>CHICKENDOG</h3>
+              <p>Salsicha, Frango Desfiado, Purê, Queijo, Milho, Ervilha, Catupiry, Batata Palha, Tomate</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <h2>hamburguers</h2>
+          <ul>
+            <li>
+              <h3>MISTO QUENTE</h3>
+              <p>Pão, Presunto, Queijo</p>
+            </li>
+            <li>
+              <h3>BAURU</h3>
+              <p>Pão, Presunto, Queijo, Tomate, Alface</p>
+            </li>
+            <li>
+              <h3>VEGETARIANO</h3>
+              <p>Alface, Tomate, Queijo, Milho, Ovo
+              </p>
+            </li>
+            <li>
+              <h3>X-BURGUER</h3>
+              <p>Hamburguer, Queijo, Tomate</p>
+            </li>
+            <li>
+              <h3>X-BURGUER+</h3>
+              <p>Hamburguer, Queijo, CHeddar ou Catupiry, Tomate</p>
+            </li>
+            <li>
+              <h3>X-SALADA</h3>
+              <p>Hamburguer, Tomate, Queijo, Alface</p>
+            </li>
+            <li>
+              <h3>X-SALADA+</h3>
+              <p>Hamburguer, Tomate, Queijo, Alface, Purê, Cheddar ou Catupiry, Batata Palha</p>
+            </li>
+            <li>
+              <h3>X-SALADA DUPLO</h3>
+              <p>2 Hamburguers, Tomate, Queijo</p>
+            </li>
+            <li>
+              <h3>X-EGG</h3>
+              <p>Hamburguer, Queijo, Tomate, Alface, Ovo, Catupiry ou Cheddar</p>
+            </li>
+            <li>
+              <h3>AMERICANO</h3>
+              <p>Hamburguer,Queijo,Presunto, Tomate, Alface, ovo</p>
+            </li>
+            <li>
+              <h3>X-BACON</h3>
+              <p>Hamburguer, Queijo, Tomate, Alface, Bacon, Catupiry ou Cheddar</p>
+            </li>
+            <li>
+              <h3>X-EGG BACON</h3>
+              <p>Hamburguer, Queijo, Tomate, Alface, Bacon, Catupiry ou Cheddar</p>
+            </li>
+            <li>
+              <h3>X-TUDO BEM BOLADO</h3>
+              <p>Hamburguer, Queijo, Tomate, Alface, Presunto, Ovo, Bacon, Cheddar e Catupiry</p>
+            </li>
+            <li>
+              <h3>CHURRASCO</h3>
+              <p>Contra-File, Queijo, Tomate, Alface</p>
+            </li>
+            <li>
+              <h3>CHURRASCO TUDO</h3>
+              <p>Contra-File, Queijo, Tomate, Alface, Ovo, Bacon, Presunto, Cheddar, Catupiry</p>
+            </li>
+            <li>
+              <h3>X-FRANGO</h3>
+              <p>File de Frango, Queijo, Tomate, Alface</p>
+            </li>
+            <li>
+              <h3>X-FRANGO TUDO</h3>
+              <p>File de Frango, Queijo, Tomate, Alface, Bacon, Ovo, Milho, Presunto, Cheddar, Catupiry
+              </p>
+            </li>
+            <li>
+              <h3>CARIJÓ BEM BOLADO</h3>
+              <p>Frango Desfiado, Queijo, TOmate, Alface, Milho</p>
+            </li>
+            <li>
+              <h3>CARIJÓ BOLADÃO</h3>
+              <p>Frango Desfiado, Queijo, TOmate, Milho, Alface, Bacon, Cheddar, Catupiry, Ovo, Batata Palha, Presunto</p>
+            </li>
+            <li>
+              <h3>GALINHÃO</h3>
+              <p>Frango Desfiado, Queijo, Milho, Alface, Ovo, Tomate</p>
+            </li>
+            <li>
+              <h3>GALINHA BOLADONA</h3>
+              <p>Frango Desfiado, Queijo, Tomate, Alface, Ovo, Bacon, Cheddar, Catupiry, Presunto, Hamburguer</p>
+            </li>
+            <li>
+              <h3>X-BURGUER+</h3>
+              <p>Hamburguer, Queijo, CHeddar ou Catupiry, Tomate</p>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <h2>Bebidas</h2>
+          <div class="bebidas">
+            <p>Temos Refrigerantes em lata 350ml</p>
+            <p>Suco Garrafa</p>
+            <p>Água</p>
+            <p>Cerveja em lata 350ml</p>
+          </div>
 
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </section>
+  <section id="depoimento">
+    <h1>Depoimentos</h1>
+  </section>
   <script src="./script.js"></script>
+  <script src="./swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
 
 </html>

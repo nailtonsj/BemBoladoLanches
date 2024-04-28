@@ -36,24 +36,4 @@ window.onscroll = () => {
   //remove toggle icon and navbar when click navbar links (scroll)
   menuIcon.classList.remove("bx-x");
   navbar.classList.remove("active");
-  // animation footer on scroll
-  let footer = document.querySelector("footer");
-
-  footer.classList.toggle(
-    "show-animate",
-    this.innerHeight + this.scrollY + 50 >=
-      document.scrollingElement.scrollHeight
-  );
 };
-//read more
-const btnLer = document.querySelector("#read");
-const txtMais = document.querySelector("#mais");
-btnLer.addEventListener("click", function (e) {
-  e.preventDefault();
-  txtMais.classList.toggle("ativo");
-  if (txtMais.classList.contains("ativo")) {
-    btnLer.innerText = "Ler Menos";
-  } else {
-    btnLer.innerText = "Ler Mais";
-  }
-});
