@@ -15,7 +15,7 @@
 
 <body>
   <div class="btn-zap">
-    <a href=""><i class='bx bxl-whatsapp'></i></a>
+    <a href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F"><i class='bx bxl-whatsapp'></i></a>
   </div>
   <!-- header -->
   <header class="header">
@@ -36,7 +36,7 @@
     <div class="inicio-texto">
       <h1 class="title">Fome?Bem bolado <br>lanches resolve.</h1>
       <p>Desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães. E não para por aí! Além dos hambúrgueres, oferecemos uma variedade de lanches deliciosos, perfeitos para saciar sua fome a qualquer hora do dia.</p>
-      <a href="">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
+      <a href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
     </div>
     <div>
       <img src="./img/inicio.png" alt="">
@@ -55,30 +55,36 @@
   <section id="servicos">
     <h1>Serviços</h1>
     <div class="card">
-      <div class="card-item">
-        <img src="./img/hotdog.png" alt="">
-        <h2>HotDog</h2>
-        <p>Temos hotdogs ao jeitinho brasileiro, com vários completos e bem recheado.</p>
-      </div>
-      <div class="card-item">
-        <img src="./img/hamburguer.png" alt="">
-        <h2>hamburguer</h2>
-        <p>O nosso hamburguer sucolento e grande vem para matar a sua fome.</p>
-      </div>
-      <div class="card-item">
-        <img src="./img/bebida.png" alt="">
-        <h2>Bebidas</h2>
-        <p>Temos refrigerantes e sucos bem gelado para fazer o complemento no seu lanche.</p>
-      </div>
+      <a href="#hotdog">
+        <div class="card-item">
+          <img src="./img/hotdog.png" alt="">
+          <h2>HotDog</h2>
+          <p>Temos hotdogs ao jeitinho brasileiro, com vários completos e bem recheado.</p>
+        </div>
+      </a>
+      <a href="#hamburguer">
+        <div class="card-item">
+          <img src="./img/hamburguer.png" alt="">
+          <h2>hamburguer</h2>
+          <p>O nosso hamburguer suculento e grande vem para matar a sua fome.</p>
+        </div>
+      </a>
+      <a href="#bebida">
+        <div class="card-item">
+          <img src="./img/bebida.png" alt="">
+          <h2>Bebidas</h2>
+          <p>Temos refrigerantes e sucos bem gelado para fazer o complemento no seu lanche.</p>
+        </div>
+      </a>
     </div>
-    <a href="" class="btn-cardapio">Ver Cardapio</a>
+    <a href="#cardapio" class="btn-cardapio">Ver Cardapio</a>
   </section>
   <section id="cardapio">
     <h1>Cardápio</h1>
     <!-- Swiper -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="hotdog">
           <h2>Hot-Dog</h2>
           <ul>
             <li>
@@ -104,7 +110,7 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="hamburguer">
           <h2>hamburguers</h2>
           <ul>
             <li>
@@ -199,7 +205,7 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-slide">
+        <div class="swiper-slide" id="bebida">
           <h2>Bebidas</h2>
           <div class="bebidas">
             <p>Temos Refrigerantes em lata 350ml</p>
@@ -216,7 +222,114 @@
   </section>
   <section id="depoimento">
     <h1>Depoimentos</h1>
+    <!-- Swiper -->
+    <div class="swiper depoimentoSwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="card-item">
+            <img src="./img/perfil1.png" alt="">
+            <h2>Luis Francisco Bonetti</h2>
+            <p>"O melhor dog de Socorro, com bom preço e a simpatia do dono e atendentes."</p>
+          </div>
+          <div class="card-item">
+            <img src="./img/perfil2.png" alt="">
+            <h2>Fábia Limeira</h2>
+            <p>"Lugar excelente, lanche top e a maionese verde estava espetacular. Preço super acessível."</p>
+          </div>
+          <div class="card-item">
+            <img src="./img/perfil3.png" alt="">
+            <h2>Deabrazuca</h2>
+            <p>"Sempre capricham bastante no queijo pra mim, já que eu não como carne."</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-item">
+            <img src="./img/perfil4.png" alt="">
+            <h2>IPS 99</h2>
+            <p>"Melhor lanche, delicioso hotdog e o x-tudo e cremoso e recheado muito bom sem duvida o melhor de socorro São Paulo"</p>
+          </div>
+          <div class="card-item">
+            <img src="./img/perfil5.png" alt="">
+            <h2>Bruno Bertolucci</h2>
+            <p>O Bem Bolado Lanches é uma das melhores opces para hamburger sandwich hotdog x-tudo vegetariano e Lanches no geral. Para Socorro e Toda a regiao eu recomendo para e checar. 😉</p>
+          </div>
+          <div class="card-item">
+            <img src="./img/perfil6.png" alt="">
+            <h2>Luis Girodelli</h2>
+            <p>Lanche top, uma verdadeira refeição kkk, o atendimento super simpático, o local a céu aberto na praça é bem no estilo dos anos 80, super recomendo</p>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <a href="" class="btn-depoimento">Ver mais</a>
   </section>
+  <section id="contato">
+    <h1>Nosso contato</h1>
+    <div class="contato">
+
+      <div class="contato-texto">
+        <div class="endereço">
+          <h2>Endereço</h2>
+          <ul>
+            <li>
+              <img src="./icon/location-arrow.svg" alt="">
+              <p>Praça 9 de Julho <br> Socorro - SP, 13960-000</p>
+            </li>
+            <li>
+              <img src="./icon/mail-bulk.svg" alt="">
+              <a href="mailto:bemboladolanches@gmail.com">
+                <p>bemboladolanches@gmail.com</p>
+              </a>
+
+
+            </li>
+            <li>
+              <img src="./icon/phone-alt.svg" alt="">
+              <a href="tel:+552199999999">
+                <p>+55 21 99999-9999</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="fucionamento">
+          <h2>Horário de funcionamento</h2>
+          <ul>
+            <li>Seg - Fechado</li>
+            <li>Ter - Dom 19:00 - 00:30</li>
+            <li>Obs:ODelivery 19:00 - 23:50</li>
+          </ul>
+        </div>
+        <div class="especiais">
+          <h2>Caracteristicas Especiais</h2>
+          <ul>
+            <li>leve embora</li>
+            <li>Cartôes de crédito aceitos</li>
+            <li>Lugares ao ar livre</li>
+            <li>Entrega</li>
+            <li>Wifi</li>
+            <li>Wifi</li>
+            <li>Acessivel a cadeiras de rodas</li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14734.793508752038!2d-46.5298536!3d-22.5903817!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c93f9a382154f9%3A0x84a6a6d25d7186f9!2sBem%20Bolado%20Lanches!5e0!3m2!1spt-BR!2sbr!4v1714350186924!5m2!1spt-BR!2sbr" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+
+    </div>
+    <div class="final">
+      <img src="./icon/logo.svg" class="logo" alt="">
+      <div class="redes-sociais">
+        <a href="https://www.facebook.com/bemboladolanche/"><img src="./icon/facebook-f.svg" alt=""></a>
+        <a href="https://www.instagram.com/bemboladosocorro/"><img src="./icon/instagram.svg" alt=""></a>
+        <a href="https://www.google.com/search?q=bem+bolado+lanches+socorro&rlz=1C1BNSD_pt-BRBR1000BR1001&oq=bem&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTIJCAEQRRg5GIAEMgYIAhBFGEAyBggDEEUYOzIPCAQQABhDGLEDGIAEGIoFMgYIBRBFGDwyBggGEEUYPTIGCAcQRRg90gEHNjEzajBqN6gCALACAA&sourceid=chrome&ie=UTF-8#ip=1"><img src="./icon/google-plus-g.svg" alt=""></a>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <p>todos os direitos reservados bem bolado lanches. Desenvolvido por <a href="https://github.com/nailtonsj">NailtonSJ</a></p>
+  </footer>
   <script src="./script.js"></script>
   <script src="./swiper-bundle.min.js"></script>
   <script>
@@ -224,6 +337,18 @@
       navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".depoimentoSwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+      },
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
       },
     });
   </script>
