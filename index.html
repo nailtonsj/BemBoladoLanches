@@ -9,11 +9,14 @@
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- swiper -->
   <link rel="stylesheet" href="./swiper-bundle.min.css">
+  <!-- animate.css -->
+  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
   <!-- mycss -->
   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+  <!-- botao flotoante do zap -->
   <div class="btn-zap">
     <a href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F"><i class='bx bxl-whatsapp'></i></a>
   </div>
@@ -32,29 +35,34 @@
       <span class="animate" style="--i:2;"></span>
     </nav>
   </header>
-  <section id="inicio">
-    <div class="inicio-texto">
-      <h1 class="title">Fome?Bem bolado <br>lanches resolve.</h1>
-      <p>Desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães. E não para por aí! Além dos hambúrgueres, oferecemos uma variedade de lanches deliciosos, perfeitos para saciar sua fome a qualquer hora do dia.</p>
-      <a href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
-    </div>
-    <div>
-      <img src="./img/inicio.png" alt="">
-    </div>
-  </section>
+  <!-- primeira section -->
+  <main>
+    <section id="inicio">
+      <div class="inicio-texto animate__animated animate__fadeInDown">
+        <h1 class="title">Fome?Bem bolado <br>lanches resolve.</h1>
+        <p class="">Desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães. E não para por aí! Além dos hambúrgueres, oferecemos uma variedade de lanches deliciosos, perfeitos para saciar sua fome a qualquer hora do dia.</p>
+        <a class="animate__animated animate__pulse animate__delay-1s animate__infinite animate__slow" href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
+      </div>
+      <!-- <div>
+        <img class="inicio-texto animate__animated animate__fadeInRight" src="./img/inicio.png" alt="">
+      </div> -->
+    </section>
+  </main>
+  <!-- Quem somos -->
   <section id="quemsomos">
-    <div class="quemsomos-texto">
-      <h1 class="title">Quem Somos</h1>
-      <p>Somos uma equipe dedicada e apaixonada, comprometida em entregar excelência. Fundada em [ano de fundação], nossa empresa tem se destacado no [setor de atuação] por fornecer produtos/serviços de alta qualidade que atendem e superam as expectativas de nossos clientes.</p>
-      <p>Nossa missão é [inserir a missão da empresa], e fazemos isso através de nosso compromisso com a qualidade, inovação e atendimento ao cliente. Acreditamos que o sucesso de nossa empresa é resultado do talento e do esforço de nossa incrível equipe de profissionais, que se esforça para criar uma experiência excepcional para nossos clientes todos os dias.</p>
-      <p>Estamos sempre buscando maneiras de melhorar e inovar, e acreditamos que o melhor ainda está por vir. Agradecemos a todos os nossos clientes por sua contínua confiança e apoio.</p>
-      <p>Seja bem-vindo à [nome da empresa]. Estamos ansiosos para atendê-lo.</p>
+    <div class="quemsomos-texto ">
+      <h1 class="title inicio-texto animate__animated animate__fadeIn">Quem Somos</h1>
+      <p class="animate__animated animate__fadeIn">Somos a Bem Bolado Lanches e estamos localizados na Praça 9 de Julho, Socorro - SP
+        Fazemos os melhores sanduiches e hamburgers da nossa regiao a mais de 14 anos, fazemos delivery ate as 11:50 na nossa adorada cidade Socorro SP onde o seu lanche e a nossa prioridade
+        Bateu aquela fome de comer um hamburguer ou aquele lanche feito na hora, conte conosco. Temos hotdog, sucos, refrigerante, cerveja e muito mais.
+        Nossos lanches e feito na hora e o nosso carro chefe "Bem Bolado 4" Utilizamos o delicioso queija chedar juntamente com verduras e legumes fresco fazendo aqule explosao de sabor que vai ficar pedindo mais.
+        Falar conosco e bem facil, click no icone do whatssap ou do nosso site e seja direcionado para um dos nossos atendentes e realiaze aquele pedido para se deliciar com os nossos lanches</p>
     </div>
   </section>
-
+  <!-- serviços -->
   <section id="servicos">
-    <h1>Serviços</h1>
-    <div class="card">
+    <h1 class="animate__animated animate__fadeIn">Serviços</h1>
+    <div class="card animate__animated animate__fadeIn">
       <a href="#hotdog">
         <div class="card-item">
           <img src="./img/hotdog.png" alt="">
@@ -79,12 +87,13 @@
     </div>
     <a href="#cardapio" class="btn-cardapio">Ver Cardapio</a>
   </section>
+  <!-- cardapio -->
   <section id="cardapio">
-    <h1>Cardápio</h1>
+    <h1 class="animate__animated animate__fadeIn">Cardápio</h1>
     <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper mySwiper ">
       <div class="swiper-wrapper">
-        <div class="swiper-slide" id="hotdog">
+        <div class="swiper-slide animate__animated animate__fadeIn" id="hotdog">
           <h2>Hot-Dog</h2>
           <ul>
             <li>
@@ -110,8 +119,8 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-slide" id="hamburguer">
-          <h2>hamburguers</h2>
+        <div class="swiper-slide animate__animated animate__fadeIn" id="hamburguer">
+          <h2>Lanches Leves</h2>
           <ul>
             <li>
               <h3>MISTO QUENTE</h3>
@@ -122,10 +131,20 @@
               <p>Pão, Presunto, Queijo, Tomate, Alface</p>
             </li>
             <li>
+              <h3>AMERICANO</h3>
+              <p>Hamburguer,Queijo,Presunto, Tomate, Alface, ovo</p>
+            </li>
+            <li>
               <h3>VEGETARIANO</h3>
               <p>Alface, Tomate, Queijo, Milho, Ovo
               </p>
             </li>
+
+          </ul>
+        </div>
+        <div class="swiper-slide animate__animated animate__fadeIn" id="hamburguer">
+          <h2>Hamburguers</h2>
+          <ul>
             <li>
               <h3>X-BURGUER</h3>
               <p>Hamburguer, Queijo, Tomate</p>
@@ -151,21 +170,22 @@
               <p>Hamburguer, Queijo, Tomate, Alface, Ovo, Catupiry ou Cheddar</p>
             </li>
             <li>
-              <h3>AMERICANO</h3>
-              <p>Hamburguer,Queijo,Presunto, Tomate, Alface, ovo</p>
+              <h3>X-EGG BACON</h3>
+              <p>Hamburguer, Queijo, Tomate, Alface, Bacon, Catupiry ou Cheddar</p>
             </li>
             <li>
               <h3>X-BACON</h3>
               <p>Hamburguer, Queijo, Tomate, Alface, Bacon, Catupiry ou Cheddar</p>
             </li>
             <li>
-              <h3>X-EGG BACON</h3>
-              <p>Hamburguer, Queijo, Tomate, Alface, Bacon, Catupiry ou Cheddar</p>
-            </li>
-            <li>
               <h3>X-TUDO BEM BOLADO</h3>
               <p>Hamburguer, Queijo, Tomate, Alface, Presunto, Ovo, Bacon, Cheddar e Catupiry</p>
             </li>
+          </ul>
+        </div>
+        <div class="swiper-slide">
+          <h2>Churrasco</h2>
+          <ul>
             <li>
               <h3>CHURRASCO</h3>
               <p>Contra-File, Queijo, Tomate, Alface</p>
@@ -174,6 +194,9 @@
               <h3>CHURRASCO TUDO</h3>
               <p>Contra-File, Queijo, Tomate, Alface, Ovo, Bacon, Presunto, Cheddar, Catupiry</p>
             </li>
+          </ul>
+          <ul>
+            <h2>Frango</h2>
             <li>
               <h3>X-FRANGO</h3>
               <p>File de Frango, Queijo, Tomate, Alface</p>
@@ -184,7 +207,7 @@
               </p>
             </li>
             <li>
-              <h3>CARIJÓ BEM BOLADO</h3>
+              <h3>CARIJÓ</h3>
               <p>Frango Desfiado, Queijo, TOmate, Alface, Milho</p>
             </li>
             <li>
@@ -199,11 +222,38 @@
               <h3>GALINHA BOLADONA</h3>
               <p>Frango Desfiado, Queijo, Tomate, Alface, Ovo, Bacon, Cheddar, Catupiry, Presunto, Hamburguer</p>
             </li>
-            <li>
-              <h3>X-BURGUER+</h3>
-              <p>Hamburguer, Queijo, CHeddar ou Catupiry, Tomate</p>
-            </li>
           </ul>
+        </div>
+        <div class="swiper-slide">
+          <ul>
+            <h2>Lanches Premium</h2>
+            <li>
+              <h3>Bem Bolado 1 </h3>
+              <p>Frango desfiado, salsicha, bacon, queijo, catupiry e tomate</p>
+            </li>
+            <li>
+              <h3>Bem Bolado 2 </h3>
+              <p>Calabresa, queijo, catupiry, tomate e alface</p>
+            </li>
+            <li>
+              <h3>Bem Bolado 3 </h3>
+              <p>Calabresa, hambúrguer, queijo, catupiry e batata palha</p>
+            </li>
+            <li>
+              <h3>Bem Bolado 4 </h3>
+              <p>2 Hambúrgueres, frango desfiado, bacon, queijo, milho, cheddar catupiry, alface e tomate</p>
+            </li>
+            <li>
+              <h3>Bem Bolado 5 </h3>
+              <p>desfiado, queijo, catupiry, cheddar, alface e tomate</p>
+            </li>
+            <li>
+              <h3>Bem Bolado 6 </h3>
+              <p>Contra file, filé de frango, hamburguer, ovo, queijo, cheedar, catupiry, alface e tomate</p>
+            </li>
+
+          </ul>
+
         </div>
         <div class="swiper-slide" id="bebida">
           <h2>Bebidas</h2>
@@ -220,10 +270,11 @@
       <div class="swiper-button-prev"></div>
     </div>
   </section>
+  <!-- depoimentos -->
   <section id="depoimento">
-    <h1>Depoimentos</h1>
+    <h1 class="animate__animated animate__fadeIn">Depoimentos</h1>
     <!-- Swiper -->
-    <div class="swiper depoimentoSwiper">
+    <div class="swiper depoimentoSwiper animate__animated animate__fadeIn">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card-item">
@@ -231,11 +282,15 @@
             <h2>Luis Francisco Bonetti</h2>
             <p>"O melhor dog de Socorro, com bom preço e a simpatia do dono e atendentes."</p>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="card-item">
             <img src="./img/perfil2.png" alt="">
             <h2>Fábia Limeira</h2>
             <p>"Lugar excelente, lanche top e a maionese verde estava espetacular. Preço super acessível."</p>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="card-item">
             <img src="./img/perfil3.png" alt="">
             <h2>Deabrazuca</h2>
@@ -248,22 +303,48 @@
             <h2>IPS 99</h2>
             <p>"Melhor lanche, delicioso hotdog e o x-tudo e cremoso e recheado muito bom sem duvida o melhor de socorro São Paulo"</p>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="card-item">
             <img src="./img/perfil5.png" alt="">
             <h2>Bruno Bertolucci</h2>
             <p>O Bem Bolado Lanches é uma das melhores opces para hamburger sandwich hotdog x-tudo vegetariano e Lanches no geral. Para Socorro e Toda a regiao eu recomendo para e checar. 😉</p>
           </div>
+        </div>
+        <div class="swiper-slide">
           <div class="card-item">
             <img src="./img/perfil6.png" alt="">
             <h2>Luis Girodelli</h2>
             <p>Lanche top, uma verdadeira refeição kkk, o atendimento super simpático, o local a céu aberto na praça é bem no estilo dos anos 80, super recomendo</p>
           </div>
         </div>
+        <div class="swiper-slide">
+          <div class="card-item">
+            <img src="./img/perfil7.png" alt="">
+            <h2>Iverson leitzke</h2>
+            <p>Melhor lanche da região!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-item">
+            <img src="./img/perfil8.png" alt="">
+            <h2>Vinicius Santos</h2>
+            <p>Um dos melhores trailers de lanche da região, muito bem localizado na praça do Fórum da cidade de Socorro, local bem agradável com um bom atendimento e com um cardápio muito bem variado e maravilhoso os gostos dos lanches, mais que recomendo a visita!</p>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="card-item">
+            <img src="./img/perfil9.png" alt="">
+            <h2>Karol Valentim</h2>
+            <p>Lugar agradável, e Lanche maravilhoso.</p>
+          </div>
+        </div>
       </div>
       <div class="swiper-pagination"></div>
     </div>
-    <a href="" class="btn-depoimento">Ver mais</a>
+    <a href="https://www.google.com/search?q=bem+bolado+lanches+socorro&oq=bem+bol&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQLhhA0gEIMTAyOWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x94c93f9a382154f9:0x84a6a6d25d7186f9,1,,,," class="btn-depoimento animate__animated animate__fadeIn">Ver mais</a>
   </section>
+  <!-- contato -->
   <section id="contato">
     <h1>Nosso contato</h1>
     <div class="contato">
@@ -278,16 +359,14 @@
             </li>
             <li>
               <img src="./icon/mail-bulk.svg" alt="">
-              <a href="mailto:bemboladolanches@gmail.com">
-                <p>bemboladolanches@gmail.com</p>
+              <a href="mailto:bemboladosocorro@gmail.com">
+                <p>bemboladosocorro@gmail.com</p>
               </a>
-
-
             </li>
             <li>
               <img src="./icon/phone-alt.svg" alt="">
-              <a href="tel:+552199999999">
-                <p>+55 21 99999-9999</p>
+              <a href="tel:+5519991732808">
+                <p>(19) 99173-2808</p>
               </a>
             </li>
           </ul>
@@ -296,8 +375,13 @@
           <h2>Horário de funcionamento</h2>
           <ul>
             <li>Seg - Fechado</li>
-            <li>Ter - Dom 19:00 - 00:30</li>
-            <li>Obs:ODelivery 19:00 - 23:50</li>
+            <li>Terça 19:00 - 00:30</li>
+            <li>Quarta 19:00 - 00:30</li>
+            <li>Quinta 19:00 - 00:30</li>
+            <li>Sexta 19:00 - 00:30</li>
+            <li>Sabado 19:00 - 00:30</li>
+            <li>Domingo - Dom 19:00 - 00:30</li>
+            <li>Obs: O Delivery funciona 19:00 - 23:50</li>
           </ul>
         </div>
         <div class="especiais">
@@ -307,7 +391,6 @@
             <li>Cartôes de crédito aceitos</li>
             <li>Lugares ao ar livre</li>
             <li>Entrega</li>
-            <li>Wifi</li>
             <li>Wifi</li>
             <li>Acessivel a cadeiras de rodas</li>
           </ul>
@@ -330,8 +413,10 @@
   <footer>
     <p>todos os direitos reservados bem bolado lanches. Desenvolvido por <a href="https://github.com/nailtonsj">NailtonSJ</a></p>
   </footer>
+  <!-- scripts -->
   <script src="./script.js"></script>
   <script src="./swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper 1-->
   <script>
     var swiper = new Swiper(".mySwiper", {
       navigation: {
@@ -340,16 +425,37 @@
       },
     });
   </script>
-  <!-- Initialize Swiper -->
+  <!-- Initialize Swiper 2-->
   <script>
     var swiper = new Swiper(".depoimentoSwiper", {
       pagination: {
         el: ".swiper-pagination",
       },
       autoplay: {
-        delay: 2500,
+        delay: 3000,
         disableOnInteraction: false,
       },
+      // Default parameters
+      slidesPerView: 1,
+      spaceBetween: 10,
+      // Responsive breakpoints
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is >= 480px
+        480: {
+          slidesPerView: 2,
+          spaceBetween: 10
+        },
+        // when window width is >= 800px
+        800: {
+          slidesPerView: 3,
+          spaceBetween: 20
+        }
+      }
     });
   </script>
 </body>

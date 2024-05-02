@@ -23,11 +23,11 @@ window.onscroll = () => {
           .classList.add("active");
       });
       //active sections for animation on scroll
-      sec.classList.add("show-animate");
+      sec.classList.add("animate__animated");
     }
     // if want to use animation that repeats on scroll use this
     else {
-      sec.classList.remove("show-animate");
+      sec.classList.remove("animate__animated");
     }
   });
   //sticky header
