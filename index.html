@@ -5,12 +5,19 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bem Bolado Lanche</title>
+  <meta name="description" content="Nós fazemos lanches desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães... ">
+  <meta name="keywords" content="Bem Bolado Lanche, Lanche, Socorro, Lanches Socorro SP, Lanches Socorro São paulo, Bem bolado, lanchonete">
+  <meta name="robots" content="">
+  <meta name="revisit-after" content="1 day">
+  <meta name="language" content="Portuguese">
+  <meta name="generator" content="N/A">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <!-- box icons -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
   <!-- swiper -->
   <link rel="stylesheet" href="./swiper-bundle.min.css">
-  <!-- animate.css -->
-  <link rel="stylesheet" href="./node_modules/animate.css/animate.min.css">
+  <!-- aos.css -->
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
   <!-- mycss -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -38,21 +45,19 @@
   <!-- primeira section -->
   <main>
     <section id="inicio">
-      <div class="inicio-texto animate__animated animate__fadeInDown">
+      <div class="inicio-texto " data-aos="fade-up" data-aos-duration="1000">>
         <h1 class="title">Fome?Bem bolado <br>lanches resolve.</h1>
         <p class="">Desde os clássicos até criações exclusivas, nossos hambúrgueres são a definição de perfeição entre pães. E não para por aí! Além dos hambúrgueres, oferecemos uma variedade de lanches deliciosos, perfeitos para saciar sua fome a qualquer hora do dia.</p>
-        <a class="animate__animated animate__pulse animate__delay-1s animate__infinite animate__slow" href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F">FAZER PEDIDO <span><img src="./icon/logo-whatsapp.svg" alt=""></span></a>
+        <a class="" href="https://api.whatsapp.com/send?phone=5519991732808&text=Bem%20Bolado%20Lanches%20em%20que%20podemos%20te%20ajudar%3F">FAZER PEDIDO <span><img width="24" height="24" src="./icon/logo-whatsapp.svg" alt="iconem do whatsapp"></span></a>
       </div>
-      <!-- <div>
-        <img class="inicio-texto animate__animated animate__fadeInRight" src="./img/inicio.png" alt="">
-      </div> -->
+      <img loading="lazy" class="inicioImg" src="./Story_instagram_Pedido_de_lanche_hamburguer_ousado_escuro_1.gif" alt="Um hamburger se movendo">
     </section>
   </main>
   <!-- Quem somos -->
   <section id="quemsomos">
-    <div class="quemsomos-texto ">
-      <h1 class="title inicio-texto animate__animated animate__fadeIn">Quem Somos</h1>
-      <p class="animate__animated animate__fadeIn">Somos a Bem Bolado Lanches e estamos localizados na Praça 9 de Julho, Socorro - SP
+    <div class="quemsomos-texto" data-aos="fade" data-aos-duration="1000">
+      <h1 class="title inicio-texto ">Quem Somos</h1>
+      <p class="">Somos a Bem Bolado Lanches e estamos localizados na Praça 9 de Julho, Socorro - SP
         Fazemos os melhores sanduiches e hamburgers da nossa regiao a mais de 14 anos, fazemos delivery ate as 11:50 na nossa adorada cidade Socorro SP onde o seu lanche e a nossa prioridade
         Bateu aquela fome de comer um hamburguer ou aquele lanche feito na hora, conte conosco. Temos hotdog, sucos, refrigerante, cerveja e muito mais.
         Nossos lanches e feito na hora e o nosso carro chefe "Bem Bolado 4" Utilizamos o delicioso queija chedar juntamente com verduras e legumes fresco fazendo aqule explosao de sabor que vai ficar pedindo mais.
@@ -61,25 +66,25 @@
   </section>
   <!-- serviços -->
   <section id="servicos">
-    <h1 class="animate__animated animate__fadeIn">Serviços</h1>
-    <div class="card animate__animated animate__fadeIn">
+    <h1 class="">Serviços</h1>
+    <div class="card ">
       <a href="#hotdog">
         <div class="card-item">
-          <img src="./img/hotdog.png" alt="">
+          <img src="./img/hotdog.png" alt="cachorro-quente">
           <h2>HotDog</h2>
           <p>Temos hotdogs ao jeitinho brasileiro, com vários completos e bem recheado.</p>
         </div>
       </a>
       <a href="#hamburguer">
         <div class="card-item">
-          <img src="./img/hamburguer.png" alt="">
+          <img src="./img/hamburguer.png" alt="Hamburguer">
           <h2>hamburguer</h2>
           <p>O nosso hamburguer suculento e grande vem para matar a sua fome.</p>
         </div>
       </a>
       <a href="#bebida">
         <div class="card-item">
-          <img src="./img/bebida.png" alt="">
+          <img src="./img/bebida.png" alt="Bebida">
           <h2>Bebidas</h2>
           <p>Temos refrigerantes e sucos bem gelado para fazer o complemento no seu lanche.</p>
         </div>
@@ -89,11 +94,11 @@
   </section>
   <!-- cardapio -->
   <section id="cardapio">
-    <h1 class="animate__animated animate__fadeIn">Cardápio</h1>
+    <h1 class="">Cardápio</h1>
     <!-- Swiper -->
     <div class="swiper mySwiper ">
       <div class="swiper-wrapper">
-        <div class="swiper-slide animate__animated animate__fadeIn" id="hotdog">
+        <div class="swiper-slide " id="hotdog">
           <h2>Hot-Dog</h2>
           <ul>
             <li>
@@ -119,7 +124,7 @@
             </li>
           </ul>
         </div>
-        <div class="swiper-slide animate__animated animate__fadeIn" id="hamburguer">
+        <div class="swiper-slide " id="hamburguer">
           <h2>Lanches Leves</h2>
           <ul>
             <li>
@@ -142,7 +147,7 @@
 
           </ul>
         </div>
-        <div class="swiper-slide animate__animated animate__fadeIn" id="hamburguer">
+        <div class="swiper-slide " id="hamburguer">
           <h2>Hamburguers</h2>
           <ul>
             <li>
@@ -272,9 +277,9 @@
   </section>
   <!-- depoimentos -->
   <section id="depoimento">
-    <h1 class="animate__animated animate__fadeIn">Depoimentos</h1>
+    <h1 class="">Depoimentos</h1>
     <!-- Swiper -->
-    <div class="swiper depoimentoSwiper animate__animated animate__fadeIn">
+    <div class="swiper depoimentoSwiper ">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <div class="card-item">
@@ -342,7 +347,7 @@
       </div>
       <div class="swiper-pagination"></div>
     </div>
-    <a href="https://www.google.com/search?q=bem+bolado+lanches+socorro&oq=bem+bol&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQLhhA0gEIMTAyOWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x94c93f9a382154f9:0x84a6a6d25d7186f9,1,,,," class="btn-depoimento animate__animated animate__fadeIn">Ver mais</a>
+    <a href="https://www.google.com/search?q=bem+bolado+lanches+socorro&oq=bem+bol&gs_lcrp=EgZjaHJvbWUqBggAEEUYOzIGCAAQRRg7MgYIARBFGDkyBggCEEUYOzIGCAMQRRg8MgYIBBBFGDwyBggFEEUYPDIGCAYQLhhA0gEIMTAyOWowajGoAgCwAgA&sourceid=chrome&ie=UTF-8#lrd=0x94c93f9a382154f9:0x84a6a6d25d7186f9,1,,,," class="btn-depoimento ">Ver mais</a>
   </section>
   <!-- contato -->
   <section id="contato">
@@ -416,6 +421,11 @@
   <!-- scripts -->
   <script src="./script.js"></script>
   <script src="./swiper-bundle.min.js"></script>
+  <!-- aos  -->
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
   <!-- Initialize Swiper 1-->
   <script>
     var swiper = new Swiper(".mySwiper", {

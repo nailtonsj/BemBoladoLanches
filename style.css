@@ -90,7 +90,7 @@ section {
   font-size: 1.7rem;
   color: var(--text-color);
   font-weight: 500;
-  margin-left: 3.5rem;
+  margin-left: 1rem;
   transition: 0.3s;
 }
 .navbar a:hover,
@@ -108,22 +108,24 @@ section {
 /* section */
 #inicio {
   display: grid;
-  justify-content: start;
-  align-items: start;
-  gap: 10rem;
-  margin-top: 3rem;
-  background-image: url("./Story_instagram_Pedido_de_lanche_hamburguer_ousado_escuro_1.gif");
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  justify-content: center;
+  align-content: center;
+  gap: 5rem;
+  /* background-image: url("./Story_instagram_Pedido_de_lanche_hamburguer_ousado_escuro_1.gif");
   background-position: right;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: contain; */
 }
-#inicio div img {
-  max-width: 50%;
+.inicioImg {
+  width: 500px;
+  height: 500px;
   margin: 0 auto;
+  object-fit: cover;
+  object-position: center;
 }
 .inicio-texto {
   display: grid;
-  max-width: 100ch;
   align-self: center;
   justify-self: center;
 }
@@ -163,7 +165,7 @@ section {
   background-size: cover;
 }
 .quemsomos-texto {
-  margin-top: 100px;
+  margin-top: 60px;
 }
 .quemsomos-texto h1 {
   font-size: 6rem;
@@ -180,7 +182,6 @@ section {
 }
 /*Serviços*/
 #servicos {
-  padding: 100px;
   background-color: #ededed;
   display: grid;
   justify-content: center;
@@ -258,7 +259,6 @@ section {
   font-size: 4.8rem;
   text-align: center;
   font-family: "Shrikhand";
-  margin-bottom: 60px;
 }
 /* swiper */
 #cardapio .swiper {
@@ -329,15 +329,13 @@ section {
 /* depoimento */
 #depoimento {
   display: grid;
-  place-content: center;
+  place-content: strech;
   background-color: #fff;
   color: #111;
 }
 #depoimento h1 {
   font-size: 4.8rem;
   text-align: center;
-  margin-top: 60px;
-  margin-bottom: 60px;
   color: #a6352f;
 }
 #depoimento .swiper {
@@ -610,6 +608,31 @@ footer p a {
 @media (max-width: 520px) {
   html {
     font-size: 50%;
+  }
+
+  section {
+    padding: 4rem 4% 2rem;
+  }
+  #inicio {
+    min-height: calc(100vh - 200px);
+    padding: 10rem 4% 2rem;
+    justify-content: center;
+    align-content: start;
+    gap: 5rem;
+  }
+  #inicio .inicio-texto {
+    padding: 0 1rem;
+  }
+  #inicio .inicioImg {
+    height: 320px;
+    width: 320px;
+    padding: 1rem;
+  }
+  .quemsomos-texto {
+    margin-top: 0;
+  }
+  .quemsomos-texto p {
+    text-align: center;
   }
   .inicio-texto h1 {
     font-size: 4.5rem;
